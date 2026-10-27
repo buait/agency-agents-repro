@@ -49,3 +49,12 @@
 | 日期 | 版本 | 操作人 | 变更摘要 |
 | ---- | ---- | ------ | -------- |
 | 2026-10-27 | v1.0 | buait | 首次复刻；新增推荐器、校验器、教育部门与中文文档 |
+
+## 与上游仓库的差异说明
+
+1. **未包含 GitHub Actions workflow 文件**：上游仓库含 6 个
+   `.github/workflows/*.yml`（CI 校验类）。由于当前推送凭证（buait 的 OAuth token /
+   deploy key）不具备 `workflow` scope，GitHub 会拒绝任何包含 workflow 文件的推送
+   （REST 上传该类路径同样返回 404）。如需 CI 校验，可从上游仓库手动拷贝
+   `.github/workflows/` 目录后推送（需 `workflow` scope 的凭证）。
+2. 其余源码、文档、LICENSE 与上游保持一致的对应关系，详见上方优化内容。
