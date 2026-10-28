@@ -1,6 +1,6 @@
-# 🎭 The Agency：一个装满专职 AI 特工的仓库（中文版）
+# 🎭 The Agency：一个装满专职  agent的仓库（中文版）
 
-> 一句话介绍：这个仓库收集了几百个「专职 AI 特工」——每一个都像一位经验丰富的专家，
+> 一句话介绍：这个仓库收集了几百个「专职  agent」——每一个都像一位经验丰富的专家，
 > 有自己的人格、工作方法和交付标准。你可以在 Claude Code、Cursor、Codex 等工具里直接启用它们。
 
 本仓库是 [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) 的
@@ -12,19 +12,19 @@
 ## 这是什么？
 
 想象你有一个「AI 梦之队」：前端开发、营销文案、财务分析、安全审计……每位成员都
-是某个领域的专家，随时待命。这个仓库就是这支队伍的档案库——每个 AI 特工就是
+是某个领域的专家，随时待命。这个仓库就是这支队伍的档案库——每个agent就是
 一个 Markdown 文件，里面写清楚了它的身份、性格、核心工作方法、交付物和衡量指标。
 
-原仓库英文介绍见 [README.en.md](README.en.md)（内容一字未改，方便对照）。
+原仓库英文介绍见 [README.en.md](README.en.md)（内容未改）
 
 ## 仓库结构
 
 ```
-academic/  academic-*       学术研究类特工
-design/    design-*         设计类特工
-education/ education-*      教育类特工（本次复刻新增）
-engineering/ engineering-*  工程开发类特工
-finance/   finance-*        财务金融类特工
+academic/  academic-*       学术研究类agent
+design/    design-*         设计类agent
+education/ education-*      教育类agent（本次复刻新增）
+engineering/ engineering-*  工程开发类agent
+finance/   finance-*        财务金融类agent
 ...（共 19 个部门，每个部门一个目录）
 divisions.json               部门总表（名称、图标、颜色）
 scripts/                     安装与校验脚本
@@ -43,7 +43,7 @@ tools.json                   工具清单
 cp engineering/*.md ~/.claude/agents/
 ```
 
-### 方式二：用新增的推荐器，让工具帮你挑特工
+### 方式二：用新增的推荐器，让工具帮你挑agent
 
 仓库里有几百个特工，不知道用哪个？运行下面的命令，输入你的任务描述，
 推荐器会按匹配度推荐最合适的 3 个：
@@ -71,4 +71,4 @@ python scripts/agent_matcher.py "分析市场竞品和定价策略" --top 5
 
 本项目遵循 MIT 许可证，完整文本见 [LICENSE](LICENSE)。
 
-> 注意：本仓库为独立复刻，与原仓库无 git 历史关联；仅供学习与二次开发参考。
+> 注意：本仓库为独立复刻仅供学习与二次开发参考。
